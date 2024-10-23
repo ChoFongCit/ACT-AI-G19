@@ -2,11 +2,28 @@ const express = require("express");
 const mongoose = require('mongoose');
 const loginRouter = require('./routes/loginRouter'); 
 const homeRouter = require('./routes/homeRouter');
-require('dotenv').config();
+require('dotenv').config()
+//const passport = require('passport'); // importing middleware for authentication
+//const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
+const port = 3000;
 const app = express();
 const mongodbURL = process.env.MONGO;
-const port = 3000;
+
+// // configure passport with Google OAuth2 
+// //------------------
+// passport.use(new GoogleStrategy({
+//   clientID: 'YOUR_GOOGLE_CLIENT_ID',
+//   clientSecret: 'YOUR_GOOGLE_CLIENT_SECRET',
+//   callbackURL: 'http://localhost:3000/auth/google/callback'
+// },
+// function(accessToken, refreshToken, profile, cb) {
+//   User.findOrCreate({ googleId: profile.id }, function (err, user) {
+//     return cb(err, user);
+//   });
+// }
+// ));
+//------------------
 
 // view engine setup
 app.set('view engine', 'ejs'); // specifying the view engine in the express app
@@ -27,6 +44,10 @@ app.use(express.json());  // using json library
 app.use(express.urlencoded({ extended: false })); // parses incoming URL-encoded form data 
 //app.use(express.static(path.join(__dirname, 'public')));  // if displaying a file it will be in public folder
 
+// init passport 
+// app.use(passport.initialize());
+// app.use(passport.session());
+
 // Connect to MongoDB using Mongoose
 mongoose.connect(mongodbURL)
   .then(() => {
@@ -42,5 +63,5 @@ mongoose.connect(mongodbURL)
   });
   
 
-  // exporting the app object to make it available in other files 
-  module.exports = app;
+    // exporting the app object to make it available in other files 
+    module.exports = app;
