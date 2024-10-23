@@ -1,0 +1,25 @@
+p {
+	text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#stockData {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
