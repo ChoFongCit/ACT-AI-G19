@@ -1,0 +1,51 @@
+[
+    {
+        "index": 0,
+        "title": "Accounts",
+        "name": "Accounts",
+        "contents": [
+            {
+                "title": "How do I change my account details?",
+                "content": "To change your account details, go to settings, select 'Update Personal Details'."
+            },
+            {
+                "title": "How do I upgrade my account?",
+                "content": "Go to Settings/Account/Upgrade Account/Select ACT Premium."
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "title": "Trading",
+        "name": "Trading",
+        "contents": [
+            {
+                "title": "What share can I trade on ACT platforms?",
+                "content": "Up to 10 technology shares can be selected and you can find all the options under Asset Management/Shares."
+            },
+            {
+                "title": "What Cryptocurrencies can I trade on ACT platforms?",
+                "content": "3 crypto assets can be selected and you can find the options under Asset Management/Cryptocurrencies."
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "title": "ACT",
+        "name": "ACT",
+        "contents": [
+            {
+                "title": "What is ACT?",
+                "content": "ACT: Agentic Corporate Trader is an online trading platform that allows users to invest in technology shares and cryptocurrencies."
+            },
+            {
+                "title": "Who is ACT Web for?",
+                "content": "ACT Web is developed for Fund Maganers."
+            },
+            {
+                "title": "Who is ACT Mobile for?",
+                "content": "ATC Mobile is for Fund Managers and Fund Administrators."
+            }
+        ]
+    }
+]
