@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
             return res.status(500).send('Server error');
         }
         
-        // Render the 'faq' view with the sorted FAQ data
+        // Render the view to display the FAQs
         res.render('faq', {
             faqInfo: faqInfo
         });

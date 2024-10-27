@@ -1,50 +1,120 @@
 [
     {
         "index": 0,
-        "title": "Accounts",
-        "name": "Accounts",
-        "contents": [
-            {
-                "title": "How do I change my account details?",
-                "content": "To change your account details, go to settings, select 'Update Personal Details'."
-            },
-            {
-                "title": "How do I upgrade my account?",
-                "content": "Go to Settings/Account/Upgrade Account/Select ACT Premium."
-            }
-        ]
-    },
-    {
-        "index": 1,
-        "title": "Trading",
-        "name": "Trading",
-        "contents": [
-            {
-                "title": "What share can I trade on ACT platforms?",
-                "content": "Up to 10 technology shares can be selected and you can find all the options under Asset Management/Shares."
-            },
-            {
-                "title": "What Cryptocurrencies can I trade on ACT platforms?",
-                "content": "3 crypto assets can be selected and you can find the options under Asset Management/Cryptocurrencies."
-            }
-        ]
-    },
-    {
-        "index": 2,
         "title": "ACT",
         "name": "ACT",
         "contents": [
             {
                 "title": "What is ACT?",
-                "content": "ACT: Agentic Corporate Trader is an online trading platform that allows users to invest in technology shares and cryptocurrencies."
+                "content": "ACT: Agentic Corporate Trader is an online trading platform that allows users to invest in technology shares and cryptocurrencies. It allows fund managers to manage multiple company portfolios, providing tools for trading, forecasting, and reporting on selected assets."
             },
             {
                 "title": "Who is ACT Web for?",
-                "content": "ACT Web is developed for Fund Maganers."
+                "content": "ACT Web is developed for Fund Maganers. It is designed for professionals managing the assets of multiple companies or large brokerages."
             },
             {
                 "title": "Who is ACT Mobile for?",
                 "content": "ATC Mobile is for Fund Managers and Fund Administrators."
+            },
+            {
+                "title": "What is the ACT-AI Engine, and how does it work?",
+                "content": "The ACT-AI Engine is a built-in feature that predicts future prices for 10 selected technology shares and 3 cryptocurrency assets. Fund managers can use these predictions to make informed decisions on behalf of their clients."
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "title": "Accounts",
+        "name": "Accounts",
+        "contents": [
+            {
+                "title": "How can I sign up/register for ACT Web?",
+                "content": "There are 2 options for registration. Either with email or existing social account."
+            },
+            {
+                "title": "How do I change my account details?",
+                "content": "To change your account details, go to 'Settings', select 'Update Personal Details', then type new information and hit 'Save changes'."
+            },
+            {
+                "title": "How do I upgrade my account?",
+                "content": "Go to Settings/Account/Upgrade Account/Select ACT Premium."
+            },
+            {
+                "title": "Can I invite team members to collaborate on the platform?",
+                "content": "Currently, only individual fund managers can sign up and manage portfolios. Team collaboration features may be introduced in future updates."
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "title": "Trading",
+        "name": "Trading",
+        "contents": [
+            {
+                "title": "Which assets are available for trading on the platform?",
+                "content": "The platform supports trading for 10 technology shares and 3 cryptocurrencies. The list of assets is periodically updated to ensure relevance and accuracy."
+            },
+            {
+                "title": "What shares can I trade on ACT platforms?",
+                "content": "Up to 10 technology shares can be selected and you can find all the options under Asset Management/Shares."
+            },
+            {
+                "title": "What cryptocurrencies can I trade on ACT platforms?",
+                "content": "3 crypto assets can be selected and you can find the options under Asset Management/Cryptocurrencies."
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "title": "ACT AI premium",
+        "name": "ACT_AI_premium",
+        "contents": [
+            {
+                "title": "What is ACT AI premium?",
+                "content": "It is a premium service that can be utilized by upgrading your account. The ACT-AI Engine is a built-in feature that provides predictions, calculations, recommendation in the form of a report for selected technology stocks and cryptocurrencies for best investment."
+            },
+            {
+                "title": "How to upgrade my account to get ACT AI premium?",
+                "content": "Simply go to 'ACT AI premium' and follow the steps for payment. Once you upgraded your account, you will have access for the four core features of ACT AI (market research, recommendation, calculation of ratios for best investment, recommendation displayed as a report)."
+            },
+            {
+                "title": "How does ACT work?",
+                "content": "The ACT-AI Engine includes four agents, each agent has a specific task: Researcher, Accountant, Recommender, Blogger."
+            },
+            {
+                "title": "Tell me more about the Researcher agent.",
+                "content": "Conducts research on specific stocks, gathering relevant data and market information."
+            },
+            {
+                "title": "Tell me more about the Accountant agent.",
+                "content": "Calculates various accounting ratios, such as liquidity ratios, profitability ratios, and growth metrics, to assess the financial health of the stocks."
+            },
+            {
+                "title": "Tell me more about the Recommender agent.",
+                "content": "Recommends buy, sell, or hold decisions based on the data analyzed by the Researcher and Accountant agents."
+            },
+            {
+                "title": "Tell me more about the Blogger agent.",
+                "content": "Formats the output of the other agents into an easy-to-read report or recommendation summary for the Fund Manager."
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "title": "Support and Feedback",
+        "name": "Support_and_Feedback",
+        "contents": [
+            {
+                "title": "How can I reach out to Customer Support?",
+                "content": "You can submit a form from the website, just go to 'Help' and fill out a form."
+            },
+            {
+                "title": "Can I provide feedback to Customer Support?",
+                "content": "Yes, you can provide feedback and rate the support service's quality. There is form under the 'Help' section to rate the quality of service and you include a note as well."
+            },
+            {
+                "title": "How can I rate ACT Web?",
+                "content": "Go to 'Help & Feedback'/'Rate ACT Web' and provide a rating there."
             }
         ]
     }
