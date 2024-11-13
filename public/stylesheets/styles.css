@@ -1,0 +1,208 @@
+p, div, h1, article {
+	text-align: center;
+}
+
+.spacer {
+    height: 20px;
+}
+
+main {
+    background-color: #f5ead8;
+    padding: 40px 20px 40px 20px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+header {
+    background: linear-gradient(135deg, #807182, #a48ba5);
+    color: #160f29;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: #f5ead8;
+    text-align: center;
+    align-items: center;
+    color: #160F29;
+    
+    padding: 50px 30px 50px 80px;
+}
+
+#nav {
+	display: block;
+	/* Setting a thick border */
+	border-bottom: 1px solid;
+	background-color: #5f8d94;
+	color: #246A73;
+	padding: 7px;
+	margin: 25px;
+    font-weight: bold;
+	border: 1px outset;
+	border-width: medium;
+	clear: left;
+	width: 30%
+}
+.subMenu {
+	background-color: #5f8d94;
+	color: #246A73;
+	display: block;
+	padding: 4px;
+	margin: 8px;
+	border: 1px outset;
+	border-width: medium;
+	/* Changes how long the button is */
+	width: 20%;
+	text-align: center;
+	text-decoration: none;
+	/* Aligning the sub menus to be centered to the main menu */
+	margin-left: 5%;
+}
+
+/* Hiding the navigation menu initially */
+#expandingMenu {
+	display: none;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-cols {
+    /* Using Flexbox to ensure columns are equal height */
+    flex: 1 0 auto;
+    width: 25%;
+    margin-top: 8px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer {
+    clear: left;
+}
+  
+  form, .container {
+    background: rgb(72, 133, 195);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Changes dynamically */
+    max-width: 350px;
+    margin: 20px auto;
+  }
+  
+  form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"] {
+    max-width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #89a7bb;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0F4C75; 
+  }
+  
+  .reset-password {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3282B8;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .reset-password:hover {
+    text-decoration: underline;
+  }
+  
+  form.hidden {
+    display: none;
+  }
+
+/* change screen settings when screen max width is 768px */
+@media only screen and (max-width: 768px) {
+    html {
+        margin: 0;
+    }
+
+    body {
+        margin: auto;
+    }
+
+    main nav {
+        float: none;
+        width: 100%;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    main nav a {
+        display: inline;
+    }
+
+
+    .image-cols {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+
+}
+
+/* change screen settings when screen max width is 480px */
+@media only screen and (max-width: 480px) {
+    html {
+        margin: 0;
+    }
+
+    body {
+        width: auto;
+    }
+
+    figure {
+        float: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    main nav a {
+        display: block;
+        font-size: 120%;
+        margin: 0;
+    }
+
+    .image-cols {
+        width: 100%;
+    }
+
+}

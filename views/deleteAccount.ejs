@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
+        <script src="/javascripts/scripts.js"></script>
+    </head>
+    <header>
+        <h1><%= title %></h1>
+    </header>
+    <nav>
+        <%- include ('partials/headers'); %>
+    </nav>
+    <main>
+        <section>
+            <h2>Request Account Deletion</h2>
+            <% if (errorMessage) { %>
+                <p class="error-message"><%= errorMessage %></p>
+              <% } %>
+              
+              <% if (successMessage) { %>
+                <p class="success-message"><%= successMessage %></p>
+              <% } %>
+
+            <form action="/accounts/delete-request" method="POST">
+                <label for="reason">Reason for deletion:</label><br>
+                <textarea name="reason" id="reason" required></textarea><br><br>
+
+                <button type="submit">Request</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

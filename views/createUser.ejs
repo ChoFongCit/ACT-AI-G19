@@ -1,0 +1,42 @@
+<div class="wrapper">
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
+        <script src="/javascripts/scripts.js"></script>
+    </head>
+    <header>
+        <h1><%= title %></h1>
+    </header>
+    <nav>
+        <%- include ('partials/headers'); %>
+    </nav>
+    <main>
+        <section>
+            <h2>Create New User</h2>
+
+            <% if (errorMessage) { %>
+                <p class="error-message"><%= errorMessage %></p>
+            <% } %>
+
+            <form action="/admin/create-user" method="POST">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="role">Role:</label><br>
+                <select name="role" id="role">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select><br><br>
+
+                <button type="submit">Create User</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

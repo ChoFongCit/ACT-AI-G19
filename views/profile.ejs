@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+    <script src="/javascripts/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><%= title %></h1>
+    </header>
+    <nav>
+        <%- include ('partials/headers'); %>
+    </nav>
+    <main>
+      <section>
+        <h2>Hello, <%= username %>!</h2>
+        <p>This is your profile page.</p>
+
+          <p>Username: <%= username %><br>
+          Email: <%= email %></p>
+
+        <button id="editProfileButton">Edit Profile</button>
+
+        <form id="updateForm" action="/user/profile" method="POST" class="hidden">
+          <label for="username">Update Username:</label>
+          <input type="text" id="username" name="username" value="<%= username %>" />
+
+          <label for="email">Update Email:</label>
+          <input type="email" id="email" name="email" value="<%= email %>" />
+
+          <button type="submit">Save Changes</button>
+        </form>
+
+        <p><a href="/accounts/request-password-reset" class="reset-password">Reset your password</a>
+          <br> <a href="/accounts/delete-request">Request Account Deletion</a>
+        </p>
+      
+      </section>
+    </main>
+  </body>
+</html>
