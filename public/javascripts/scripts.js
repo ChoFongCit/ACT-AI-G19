@@ -1,9 +1,11 @@
-// Showing the sub menu function
+
 function show() {
-	var x = document.getElementById("expandingMenu");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
+    const menu = document.getElementById('expandingMenu');
+    if (menu.classList.contains('hide')) {
+        menu.classList.remove('hide');
+        menu.classList.add('show');
+    } else {
+        menu.classList.remove('show');
+        menu.classList.add('hide');
+    }
 }
