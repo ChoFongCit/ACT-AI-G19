@@ -22,8 +22,6 @@
           <p>Username: <%= username %><br>
           Email: <%= email %></p>
 
-        <button id="editProfileButton">Edit Profile</button>
-
         <form id="updateForm" action="/user/profile" method="POST" class="hidden">
           <label for="username">Update Username:</label>
           <input type="text" id="username" name="username" value="<%= username %>" />
