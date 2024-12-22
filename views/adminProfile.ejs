@@ -21,17 +21,8 @@
 
           <p>Username: <%= username %><br>
           Email: <%= email %></p>
-          <p><a href="/admin/create-user">Create New User</a></p>
-
-        <button id="editProfileButton">Edit Profile</button>
-        <% if (users) { %>
-          <h3>User Management</h3>
-          <ul>
-            <% users.forEach(user => { %>
-              <li><%= user.username %> - <%= user.email %></li>
-            <% }) %>
-          </ul>
-        <% } %>
+          <p><a href="/admin/create-user">Create New User</a><br>
+          </p>
 
         <form id="updateForm" action="/admin/profile" method="POST" class="hidden">
           <label for="username">Update Username:</label>
@@ -45,7 +36,19 @@
 
         <p><a href="/accounts/request-password-reset" class="reset-password">Reset your password</a></p>
 
+          
+        <% if (users) { %>
+          <details><summary>
+            <h3>User List</h3></summary>
+          
+          <ul>
+            <% users.forEach(user => { %>
+              <li><%= user.username %> - <%= user.email %></li>
+            <% }) %>
+          </ul>
+        <% } %>
 
+      </details>
 
       </section>
     </main>
