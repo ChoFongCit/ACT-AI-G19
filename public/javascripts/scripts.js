@@ -43,10 +43,3 @@ function toggleForm() {
     form.classList.toggle('hidden'); // Toggles the 'hidden' class
   }
   
-  document.addEventListener('DOMContentLoaded', function () {
-    const editProfileButton = document.getElementById('editProfileButton');
-    if (editProfileButton) {
-      editProfileButton.addEventListener('click', toggleForm);
-    }
-  });
-  
